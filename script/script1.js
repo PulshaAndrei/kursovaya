@@ -2,7 +2,7 @@ function step1(){
 	var dayNam = ['ВОСКРЕСЕНЬЕ', 'ПОНЕДЕЛЬНИК', 'ВТОРНИК', 'СРЕДА', 'ЧЕТВЕРГ', 'ПЯТНИЦА', 'СУББОТА'];
 	var monthNam = ['ЯНВАРЯ', 'ФЕВРАЛЯ', 'МАРТА', 'АПРЕЛЯ', 'МАЯ', 'ИЮНЯ', 'ИЮЛЯ', 'АВГУСТА', 'СЕНТЯБРЯ', 'ОКТЯБРЯ', 'НОЯБРЯ', 'ДЕКАБРЯ'];
 	step1_1 = function(){
-		step2($( "#calendar" ).datepicker( "getDate" ));
+		step1_2($( "#calendar" ).datepicker( "getDate" ));
 	};
 	$('body>section').append($('<div id="main_date"><h1>Дата</h1><p>Выберите в календаре дату поездки</p><input onclick="step1_1()" type="button" value="Продолжить"></div>'));
 	$('#home').remove();$('body>section').append($('<div id="calendar_box"><div id="calendar"><div class="calendar_left"></div></div></div>'));
