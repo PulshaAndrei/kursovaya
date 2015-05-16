@@ -14,7 +14,7 @@ function step3(currentDate1,currentDate2,myMap,searchControl){
 	}
 
 	change = function(n){
-		if (n === 1) $('#select_priority').css("display","block");
+		if (n === 1) $('#select_priority').css("display","flex");
 		else $('#select_priority').css("display","none");
 		if (n === 2) $('#list_time').css("display","block");
 		else $('#list_time').css("display","none");
@@ -51,11 +51,11 @@ function step3(currentDate1,currentDate2,myMap,searchControl){
 		for (var i = 0; i < z.length; i++)
 			if($(z[i]).data("elem").coords == elem.coords) return;
 
-		if (name.length>18)	var name20 = name.substring(0,18)+"...";
-		else name20 = name;
+		/*if (name.length>18)	var name20 = name.substring(0,18)+"...";
+		else name20 = name;*/
 		var time_limit_str = "C " + time_limit1 + " по " + time_limit2;
 
-		$("#list_input").append("<li class='select_active "+priority+"'><p>"+name20+"<span class='list_close'></span></p><span>"+time_limit_str+" </span><span style='float: right'> "+time_duration+" минут</span></li>");
+		$("#list_input").append("<li class='select_active "+priority+"'><p>"+name+"<span class='list_close'></span></p><span>"+time_limit_str+" </span><span style='float: right'> "+time_duration+" минут</span></li>");
 		$("#list_input li:last-child").data("elem",elem);
 		$("#list_input li:last-child .list_close").data("elem",elem);
 
@@ -100,8 +100,6 @@ function step3(currentDate1,currentDate2,myMap,searchControl){
 		    function (res) {
 		        name = res.geoObjects.get(0).properties.get('name');
 		        set_adress(name);
-		        if (name.length>25) $('#map_add h1').css("font-size", "20px");
-					else $('#map_add h1').css("font-size", "36px");
 		    });
 	}
 
@@ -111,7 +109,5 @@ function step3(currentDate1,currentDate2,myMap,searchControl){
 				name = searchResult[e.get('index')].properties.get('name');
 				coords = searchResult[e.get('index')].geometry._Ng;
 				set_adress(name);
-				if (name.length>25) $('#map_add h1').css("font-size", "22px");
-				else $('#map_add h1').css("font-size", "36px");
 			});
 }

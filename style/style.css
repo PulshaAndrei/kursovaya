@@ -219,7 +219,7 @@ footer{
 }
 #map_add h1{
 	text-align: center;
-	font-size: 36px;
+	font-size: 28px;
 	margin-top: 0;
 	overflow: hidden;
 }
@@ -353,7 +353,7 @@ footer{
 	text-align: left;
 }
 #list_input p{
-	margin: 0 0 10px 0;
+	margin: 0 25px 10px 0;
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -365,6 +365,7 @@ footer{
 	cursor: pointer;
 	position: absolute;
 	right: 15px;
+	top: 15px;
 }
 .list_close:hover{
 	background: url(../img/close.png) no-repeat;
@@ -442,6 +443,69 @@ footer{
 	display: block!important;
 	padding: 50px 80px;
 }
-/*@media screen and (min-device-width: 1200px) {
-	.container {width: 1170px;}
-}*/
+@media screen and (max-width: 1300px) {
+	#main_date{
+		width: 35%;
+	}
+	#calendar_box{
+		width: 65%;
+	}
+	#main_date h1{
+		margin: 0 0 15px 0;
+	}
+	#calendar_box h1{
+		font-size: 32px;
+	}
+	#calendar_box h1:first-child{
+		margin-top: 0;
+	}
+	#map_play h1{
+		margin-top: 0;
+	}
+	#map_add p{
+		font-size: 16px;
+	}
+	#map_add a{
+		font-size: 12px;
+		line-height: 25px;
+		padding: 5px 15px;
+	}
+	#list_time{
+		font-size: 13px;
+	}
+	#list_time input[type="text"]{
+		width: 20px;
+	}
+	#list_time input{
+		font-size: 13px;
+		padding: 5px;
+	}
+	#map_add h1{
+		font-size: 22px;
+	}
+	#duration_time {
+		font-size: 14px;
+	}
+	#duration_time input{
+		font-size: 14px;
+	}
+	#map_list h1{
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+	#rezult_btn{
+		font-size: 20px;
+		padding: 10px 20px;
+		margin-top: 20px
+	}
+	#list_input li{
+		font-size: 10px;
+	}
+	#list_input p{
+		font-size: 13px;
+	}
+	#add_place {
+	 	font-size: 20px;
+		padding: 10px 20px;
+	}
+}
