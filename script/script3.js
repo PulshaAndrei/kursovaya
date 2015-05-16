@@ -73,7 +73,7 @@ function step3(currentDate1,currentDate2,myMap,searchControl){
 		var z = $("#list_input li");
 		for (var i = 0; i < z.length; i++)
 			rez.push($(z[i]).data("elem"));
-		createRezult(rez,currentDate1,currentDate2);
+		if (rez.length>1) createRezult(rez,currentDate1,currentDate2);
 	}
 
 	$('body>section').append('<div id="map_add"><h1>Выберите место для добавления</h1><p onclick="change(1)">Важность</p><div id="select_priority"><a href="#" class="high_prior" onclick="select_prior('+"'high_prior'"+')">Высокая</a><a href="#" class="middle_prior" onclick="select_prior('+"'middle_prior'"+')">Средняя</a><a href="#" class="low_prior" onclick="select_prior('+"'low_prior'"+')">Низкая</a></div><p onclick="change(2)">Время посещения</p><div id="list_time"></div><p onclick="change(3)">Длительность пребывания</p><div id="duration_time"><input type="number" value="30"><span> минут</span></div><input type="button" value="Добавить" id="add_place" onclick="addList()"></div><div id="map_list"><h1>Маршрут</h1><ul id="list_input"></ul></div>');

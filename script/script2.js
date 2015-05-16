@@ -8,7 +8,7 @@ function step2(currentDate1,currentDate2){
 		    var geolocation = ymaps.geolocation,
 		        myMap = new ymaps.Map('map_city', {
 		            center: [53.893795, 27.546793], 
-		            zoom: 15,
+		            zoom: 10,
 		            controls: ['geolocationControl','zoomControl','searchControl','fullscreenControl']
 		        });
 			geolocation.get({

@@ -436,6 +436,7 @@ footer{
 	border: 1px solid #778489;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.075);
 	background-color: #f1f4f5;
+	width: 60px;
 }
 .new_calendar_box{
 	display: block!important;
