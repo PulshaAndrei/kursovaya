@@ -102,9 +102,13 @@ footer{
 	width: 50%;		
 	padding: 60px;
 	background: #38c8e0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 #main_date h1{
 	font-size: 66px;
+	margin-top: 0;
 }
 #calendar_box{
 	background: url("../img/arrow-triangle.png") no-repeat scroll left 0px center  #E4E9EA;
@@ -204,10 +208,14 @@ footer{
 	background: #38c8e0;
 	color: #fff;
 	text-align: center;
-	font-size: 28px;
+	font-size: 28px;	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 #map_play h1{
 	font-size: 66px;
+	margin-top: 0;
 }
 
 #map_add{
@@ -426,6 +434,7 @@ footer{
 	color: #38c8e0;
 	font-size: 38px;
 	display: block;
+	margin-top: 0;
 }
 #calendar_box>div>input{
 	border-radius: 0;
