@@ -518,3 +518,94 @@ footer{
 		padding: 10px 20px;
 	}
 }
+
+
+
+
+/*Help*/
+#content{
+	padding: 80px 100px;
+	color: #778489;
+	font-family: 'Open Sans', sans-serif;
+}
+#content form{
+	width: 60%;
+}
+#content input, textarea{
+	border-radius: 0px 0px 0px 0px;
+	color: #555555;
+	display: block;
+	font-size: 14px;
+	height: 40px;
+	line-height: 20px;
+	margin-bottom: 10px;
+	padding: 6px 20px;
+	vertical-align: middle;
+	border: 0px solid transparent;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+	background-color: #f1f4f5;
+	width: 80%;
+}
+#content textarea{
+	height: 70px;
+	padding-top: 10px;
+}
+
+#content button{
+	background: #f98253 repeat scroll 0 0;
+  border: none;
+  font-weight: 400;
+  border-radius: 0px;
+  box-shadow: none;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-shadow: none;
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+
+#content div{
+	width: 40%;
+}
+
+
+
+/*Сontact*/
+.contact{
+	background: #121212;
+	justify-content: center;	
+	align-items: center;
+}
+caption{
+	padding: 0 20px;
+	border-bottom: #1f1f1f solid 2px;
+}
+.caption img{
+	width: 200px;
+	border-radius: 200px;
+	border: 4px #d1d1d1 solid;
+	box-shadow: 0 0 20px 10px rgba(0,0,0,0.5);
+	margin-left: 105px;
+	margin-top: 60px;
+}
+.caption p, .caption h1{
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	text-align: center;
+}
+.caption p{
+	color: #75818a;
+}
+.info{
+	padding: 0 80px;
+	font-family: 'Open Sans', sans-serif;
+	color: #75818a;
+}
+.info strong{
+	color: white;
+}
+.info h2{
+	text-align: center;
+	color: #28ad60;
+}
